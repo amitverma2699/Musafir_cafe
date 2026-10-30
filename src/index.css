@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color: #29211E;
+    background-color: #FAF7F1;
+  }
+
+  body {
+    font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+    color: #29211E;
+    background-color: #FAF7F1;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-editorial {
+    font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+    letter-spacing: -0.01em;
+  }
+
+  /* Accessible high-contrast focus styles */
+  :focus-visible {
+    outline: 2px solid #B86E52;
+    outline-offset: 3px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom luxury subtle rules & borders */
+.border-subtle {
+  border-color: rgba(41, 33, 30, 0.12);
+}
+
+.border-subtle-dark {
+  border-color: rgba(237, 226, 208, 0.15);
+}

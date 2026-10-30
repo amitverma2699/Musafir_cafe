@@ -1,0 +1,58 @@
+import type { GalleryItem } from '../types';
+
+export const galleryItems: GalleryItem[] = [
+  {
+    id: 'gal-1',
+    title: 'The Golden Lamination',
+    category: 'pastry',
+    image: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1000&q=80',
+    alt: 'Golden freshly baked croissants cooling on bakery rack',
+    aspectRatio: 'landscape',
+    caption: 'Laminated with cultured Normandy butter and allowed to slow-ferment for three days.',
+  },
+  {
+    id: 'gal-2',
+    title: 'Morning Light in the Dining Room',
+    category: 'space',
+    image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=80',
+    alt: 'Sunlight streaming across wooden cafe tables and linen seating',
+    aspectRatio: 'portrait',
+    caption: 'Intimate seating crafted in reclaimed oak, designed for quiet conversation.',
+  },
+  {
+    id: 'gal-3',
+    title: 'Precision Espresso Extraction',
+    category: 'coffee',
+    image: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1000&q=80',
+    alt: 'Barista preparing a specialty coffee pour-over with steam rising',
+    aspectRatio: 'portrait',
+    caption: 'Dialing in seasonal micro-lots every single morning across water chemistry and grind.',
+  },
+  {
+    id: 'gal-4',
+    title: 'Hand-Scored Wild Sourdough',
+    category: 'craft',
+    image: 'https://images.unsplash.com/photo-1589367920969-ab8e050bbb04?auto=format&fit=crop&w=1000&q=80',
+    alt: 'Loaves of artisan sourdough bread dusted with flour and scored before hearth baking',
+    aspectRatio: 'landscape',
+    caption: 'Baked directly on volcanic hearth stones at 250°C.',
+  },
+  {
+    id: 'gal-5',
+    title: 'Handcrafted Celebration Entremets',
+    category: 'pastry',
+    image: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1000&q=80',
+    alt: 'Detailed artisan cake garnished with botanical elements and velvet chocolate glaze',
+    aspectRatio: 'square',
+    caption: 'Custom celebration cakes curated for memorable milestones.',
+  },
+  {
+    id: 'gal-6',
+    title: 'The Morning Display Counter',
+    category: 'space',
+    image: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1000&q=80',
+    alt: 'Curated morning pastry counter with morning buns and brioche',
+    aspectRatio: 'landscape',
+    caption: 'Our counter opens at 7:00 AM until batches naturally sell out for the day.',
+  },
+];

@@ -1,0 +1,215 @@
+import type { MenuItem, MenuCategoryId } from '../types';
+
+export interface CategoryInfo {
+  id: MenuCategoryId;
+  label: string;
+  tagline: string;
+}
+
+export const menuCategories: CategoryInfo[] = [
+  { id: 'pastries', label: 'Viennoiserie & Pastries', tagline: 'Laminated with slow cultured butter, baked fresh three times daily' },
+  { id: 'cakes', label: 'Celebration & Tea Cakes', tagline: 'Modern layered entremets, rustic tea cakes, and delicate tarts' },
+  { id: 'bread', label: 'Slow Sourdough & Loaves', tagline: 'Naturally leavened with our 8-year sourdough mother culture' },
+  { id: 'coffee', label: 'Specialty Coffee & Teas', tagline: 'Single-origin espresso and slow bar coffees roasted weekly' },
+  { id: 'seasonal', label: 'Seasonal Reserve', tagline: 'Limited small-batch creations shaped by regional market harvests' },
+];
+
+export const menuItems: MenuItem[] = [
+  // Pastries
+  {
+    id: 'p1',
+    name: 'Classic Butter Croissant',
+    frenchName: 'Croissant au Beurre',
+    description: '36 delicate layers of cultured churned butter with a resonant crust and honeycombed crumb.',
+    price: '$5.00',
+    category: 'pastries',
+    dietary: ['Vegetarian'],
+    isSignature: true,
+  },
+  {
+    id: 'p2',
+    name: 'Kouign-Amann Breton',
+    frenchName: 'Kouign-Amann Traditionnel',
+    description: 'Caramelized Breton pastry layered with salted butter and turbinado sugar that shatters to the bite.',
+    price: '$5.50',
+    category: 'pastries',
+    dietary: ['Vegetarian'],
+    isSignature: true,
+  },
+  {
+    id: 'p3',
+    name: 'Twice-Baked Almond Frangipane',
+    frenchName: 'Croissant aux Amandes',
+    description: 'Soaked in vanilla rum syrup, filled with roasted almond frangipane cream, topped with toasted flakes.',
+    price: '$6.50',
+    category: 'pastries',
+    dietary: ['Contains Nuts'],
+  },
+  {
+    id: 'p4',
+    name: 'Bordeaux Rum & Vanilla Cannelé',
+    frenchName: 'Cannelé Bordelais',
+    description: 'Baked in beeswaxed copper molds. Dark caramelized crust with a moist, custardy rum-perfumed interior.',
+    price: '$4.25',
+    category: 'pastries',
+    dietary: ['Vegetarian'],
+  },
+  {
+    id: 'p5',
+    name: 'Gruyère & Caramelized Leek Swirl',
+    frenchName: 'Feuilleté au Poireau & Comté',
+    description: 'Savory puff lamination with slow-braised winter leeks, Dijon crème, and aged alpine Gruyère.',
+    price: '$6.75',
+    category: 'pastries',
+    dietary: ['Vegetarian'],
+  },
+
+  // Cakes
+  {
+    id: 'c1',
+    name: 'Pistachio, Raspberry & Rose Entremet',
+    frenchName: 'Délice Pistache & Framboise',
+    description: 'Bronte pistachio financier base, raspberry gelée insert, encased in light white chocolate mousse.',
+    price: '$9.50',
+    category: 'cakes',
+    dietary: ['Contains Nuts', 'Vegetarian'],
+    isSignature: true,
+  },
+  {
+    id: 'c2',
+    name: 'Opera Torte Grand Marnier',
+    frenchName: 'L’Opéra Parisien',
+    description: 'Almond sponge soaked in single-origin espresso syrup, layered with dark ganache and buttercream.',
+    price: '$9.00',
+    category: 'cakes',
+    dietary: ['Contains Nuts'],
+  },
+  {
+    id: 'c3',
+    name: 'Brown Butter & Fig Tea Loaf',
+    frenchName: 'Cake aux Figues & Beurre Noisette',
+    description: 'Tender crumb rich with nutty browned butter, Turkish black figs, and raw honeycomb glaze.',
+    price: '$6.00 / slice',
+    category: 'cakes',
+    dietary: ['Vegetarian'],
+  },
+  {
+    id: 'c4',
+    name: 'Flourless Bitter Dark Chocolate Torte',
+    frenchName: 'Fondant au Chocolat 72%',
+    description: 'Silky, dense Peruvian single-estate chocolate ganache torte served with fleur de sel.',
+    price: '$8.50',
+    category: 'cakes',
+    dietary: ['Gluten-Free', 'Vegetarian'],
+    isSignature: true,
+  },
+
+  // Bread
+  {
+    id: 'b1',
+    name: 'Heritage Country Sourdough Loaf',
+    frenchName: 'Pain de Campagne au Levain',
+    description: '36-hour slow fermentation using stoneground heritage wheat. Blistered crust with open airy crumb.',
+    price: '$10.00',
+    category: 'bread',
+    dietary: ['Vegan'],
+    isSignature: true,
+  },
+  {
+    id: 'b2',
+    name: 'Rosemary & Sea Salt Focaccia',
+    frenchName: 'Focaccia à l’Huile d’Olive',
+    description: 'High-hydration dough enriched with cold-pressed Sicilian olive oil, garden rosemary, and Maldon salt flakes.',
+    price: '$7.50',
+    category: 'bread',
+    dietary: ['Vegan'],
+  },
+  {
+    id: 'b3',
+    name: 'Traditional Parisian Baguette Tradition',
+    frenchName: 'Baguette de Tradition',
+    description: 'Pointed tips, deep ear, cream-colored open crumb with natural wheaty sweetness.',
+    price: '$4.50',
+    category: 'bread',
+    dietary: ['Vegan'],
+  },
+  {
+    id: 'b4',
+    name: 'Dark Rye with Toasted Caraway & Coriander',
+    frenchName: 'Pain de Seigle Épicé',
+    description: 'Whole rye flour, dark molasses, toasted whole seeds. Dense, aromatic, and keeping fresh for days.',
+    price: '$9.50',
+    category: 'bread',
+    dietary: ['Vegan'],
+  },
+
+  // Coffee
+  {
+    id: 'cf1',
+    name: 'Velvet Flat White',
+    frenchName: 'Double Cortado Chaud',
+    description: 'Double ristretto shot of our seasonal Musafir House Blend folded with micro-textured whole milk.',
+    price: '$5.25',
+    category: 'coffee',
+    dietary: ['Dairy or Oat Alternative'],
+    isSignature: true,
+  },
+  {
+    id: 'cf2',
+    name: 'Iced Cardamom Rose Latte',
+    frenchName: 'Latte Glacé à la Rose & Cardamome',
+    description: 'House-made green cardamom simple syrup, Damascus rose mist, double espresso, chilled oat milk.',
+    price: '$6.50',
+    category: 'coffee',
+    dietary: ['Vegan'],
+    isSignature: true,
+  },
+  {
+    id: 'cf3',
+    name: 'Single Origin Batch Filter (Daily Roaster)',
+    frenchName: 'Café Filtre du Jour',
+    description: 'Precision batch-brewed on Fetco. Light roast highlighting clean floral and citrus profiles.',
+    price: '$4.50',
+    category: 'coffee',
+    dietary: ['Vegan'],
+  },
+  {
+    id: 'cf4',
+    name: 'Ceremonial Matcha Cloud',
+    frenchName: 'Matcha Uji de Cérémonie',
+    description: 'Stoneground first-harvest Uji matcha whisked with warm bamboo chasen over steamed vanilla milk.',
+    price: '$6.75',
+    category: 'coffee',
+    dietary: ['Vegetarian', 'Oat Milk Available'],
+  },
+
+  // Seasonal
+  {
+    id: 's1',
+    name: 'Black Mission Fig & Chevre Crostata',
+    frenchName: 'Tartelette Figue & Chèvre Cendré',
+    description: 'Flaky rye pastry, whipped goat cheese cream, caramelized fresh figs, thyme-infused mountain honey.',
+    price: '$8.25',
+    category: 'seasonal',
+    dietary: ['Vegetarian'],
+    isSignature: true,
+  },
+  {
+    id: 's2',
+    name: 'Blood Orange & Campari Cruffin',
+    frenchName: 'Cruffin à l’Orange Sanguine',
+    description: 'Muffin-shaped lamination rolled in spiced citrus sugar, piped with bitter blood orange curd.',
+    price: '$6.75',
+    category: 'seasonal',
+    dietary: ['Vegetarian'],
+  },
+  {
+    id: 's3',
+    name: 'Smoked Vanilla Autumn Cold Foam',
+    frenchName: 'Mousse Froide Vanille Fumée',
+    description: '18-hour cold brew layered with velvety smoked vanilla sea-salt cold foam and cacao dusting.',
+    price: '$6.50',
+    category: 'seasonal',
+    dietary: ['Vegetarian'],
+  },
+];

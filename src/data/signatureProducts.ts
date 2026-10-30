@@ -1,0 +1,48 @@
+import type { SignatureProduct } from '../types';
+
+export const signatureProducts: SignatureProduct[] = [
+  {
+    id: 'pain-au-chocolat-grand-cru',
+    name: 'Valrhona Laminated Pain au Chocolat',
+    frenchName: 'Pain au Chocolat Pur Beurre',
+    subtitle: '72-Hour Fermented Viennoiserie',
+    description: 'Folded with Normandy AOP butter and three batons of 70% Guanaja single-estate dark chocolate. Baked golden with a caramelized shatter-crisp exterior.',
+    price: '$6.50',
+    image: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1000&q=80',
+    tag: 'Signature Viennoiserie',
+    flavorNotes: ['Normandy Butter', '70% Dark Chocolate', 'Caramelized Flake'],
+  },
+  {
+    id: 'cardamom-orange-cravat',
+    name: 'Wild Cardamom & Orange Morning Knot',
+    frenchName: 'Brioche Feuilletée à la Cardamome',
+    subtitle: 'Swedish-Inspired Brioche Feuilletée',
+    description: 'Hand-twisted lamination spiked with freshly ground green cardamom pods, brushed with bitter Seville orange blossom syrup and pearl demerara crystals.',
+    price: '$5.75',
+    image: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1000&q=80',
+    tag: 'Baker’s Daily Pick',
+    flavorNotes: ['Green Cardamom', 'Seville Orange', 'Raw Demerara'],
+  },
+  {
+    id: 'basque-burnt-cheesecake',
+    name: 'Musafir Saffron & Vanilla Basque Torte',
+    frenchName: 'Gâteau Basque Brûlé au Safran',
+    subtitle: 'Ultra-Creamy Custard Center',
+    description: 'Blistered deeply on top at high heat while remaining pillowy, molten, and velvety inside. Infused with Kashmiri saffron threads and Tahitian vanilla bean.',
+    price: '$9.00 / slice',
+    image: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1000&q=80',
+    tag: 'Patisserie Highlight',
+    flavorNotes: ['Molten Center', 'Kashmiri Saffron', 'Tahitian Vanilla'],
+  },
+  {
+    id: 'ethiopian-single-origin-pourover',
+    name: 'Guji Highland Natural Pour-Over',
+    frenchName: 'Café de Terroir Filtre V60',
+    subtitle: 'Direct Trade Micro-Lot',
+    description: 'Hand-dripped on V60. Notes of candied bergamot, ripe stone peach, and jasmine blossoms with a delicate honey finish. Brewed at 93°C water profile.',
+    price: '$7.00',
+    image: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1000&q=80',
+    tag: 'Specialty Coffee',
+    flavorNotes: ['Jasmine Flower', 'Stone Peach', 'Bergamot Zest'],
+  },
+];
